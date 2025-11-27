@@ -58,9 +58,7 @@ if (isset($_GET['message'])) {
         <div class="container">
             <span class="navbar-brand">Admin Dashboard</span>
             <div class="d-flex align-items-center">
-                <span class="navbar-text text-white me-3">Welcome, <?= htmlspecialchars($_SESSION['']) ?>!</span>
-                <a href="../Backend/logout.php" class="btn btn-outline-light">Logout</a>
-            </div>
+            <span class="navbar-text text-white me-3">Welcome, <?= htmlspecialchars($_SESSION['fullname'] ?? 'Admin') ?>!</span>            </div>
         </div>
     </nav>
 
