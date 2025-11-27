@@ -1,0 +1,23 @@
+[
+    {
+        "student_id": "1001",
+        "name": "Sara Ahmed",
+        "group": "ISIL_A"
+    },
+    {
+        "student_id": "1002",
+        "name": "Yacine Ali",
+        "group": "ISIL_A"
+    },
+    {
+        "student_id": "1003",
+        "name": "Houcine Rania",
+        "group": "ISIL_B"
+    },
+    {
+        "student_id": "31717414",
+        "name": "Ikram douali",
+        "group": "ISIL_A",
+        "email": "ikramdouali0@gmail.com"
+    }
+]

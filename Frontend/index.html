@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Portal | Algiers University</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom tweaks on top of Bootstrap */
+        body { background-color: #f8f9fa; }
+        .navbar { box-shadow: 0 2px 4px rgba(0,0,0,.1); }
+        .card { box-shadow: 0 4px 6px rgba(0,0,0,.05); border: none; }
+        /* Keep your highlight colors */
+        .highlight-green { background-color: #d1e7dd !important; }
+        .highlight-yellow { background-color: #fff3cd !important; }
+        .highlight-red { background-color: #f8d7da !important; color: #842029; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">🎓 Algiers Univ Attendance</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">🏠 Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Backend/add_student.php">➕ Add Student</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Backend/take_attendance.php">🖊️ Take Attendance</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card p-4">
+            <h2 class="text-primary text-center mb-4" id="attendance">Advanced Web Programming Attendance Record</h2>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover text-center align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th rowspan="2" class="align-middle">Last Name</th>
+                            <th rowspan="2" class="align-middle">First Name</th>
+                            <th colspan="12">Session Attendance and Participation</th>
+                            <th rowspan="2" class="align-middle bg-light">Absences</th>
+                            <th rowspan="2" class="align-middle bg-light">Participation</th>
+                            <th rowspan="2" class="align-middle" style="min-width: 150px;">Message</th>
+                        </tr>
+                        <tr>
+                            <th>S1</th><th>P1</th><th>S2</th><th>P2</th><th>S3</th><th>P3</th>
+                            <th>S4</th><th>P4</th><th>S5</th><th>P5</th><th>S6</th><th>P6</th>
+                        </tr>
+                    </thead>
+                    <tbody id="attendanceBody">
+                        <tr>
+                            <td>Ahmed</td><td>Sara</td>
+                            <td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td>✓</td>
+                            <td>✓</td><td></td><td>✓</td><td>✓</td><td>✓</td><td></td>
+                            <td class="fw-bold"></td><td class="fw-bold"></td><td class="message small"></td>
+                        </tr>
+                        <tr>
+                            <td>Ali</td><td>Yacine</td>
+                            <td></td><td></td><td></td><td>✓</td><td>✓</td><td></td>
+                            <td></td><td>✓</td><td></td><td></td><td></td><td></td>
+                            <td class="fw-bold"></td><td class="fw-bold"></td><td class="message small"></td>
+                        </tr>
+                        <tr>
+                             <td>Bad</td><td>Student</td>
+                             <td></td><td></td><td></td><td></td><td></td><td></td>
+                             <td></td><td></td><td></td><td></td><td></td><td></td>
+                             <td class="fw-bold"></td><td class="fw-bold"></td><td class="message small"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="attendance.js"></script> 
+</body>
+</html>

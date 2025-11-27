@@ -1,0 +1,10 @@
+[
+    {
+        "student_id": "1001",
+        "status": "present"
+    },
+    {
+        "student_id": "1002",
+        "status": "absent"
+    }
+]
